@@ -32,3 +32,11 @@ Use PIA DNS: open `/etc/resolv.conf` and add:
 nameserver 209.222.18.222
 nameserver 209.222.18.218
 ```
+
+Update NetworkManager DNS:
+
+```sh
+nmcli connection modify conname ipv4.dns "209.222.18.222, 209.222.18.218"
+
+sudo systemctl restart NetworkManager.service
+```
