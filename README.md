@@ -16,6 +16,7 @@ Add username and password to `account.txt`:
 
 `
 echo 'username' >> /etc/openvpn/account.txt
+
 echo 'password' >> /etc/openvpn/account.txt
 `
 
@@ -23,6 +24,7 @@ Secure `account.txt`:
 
 `
 sudo chown root:root /etc/openvpn/account.txt
+
 sudo chmod 0600 /etc/openvpn/account.txt
 `
 
